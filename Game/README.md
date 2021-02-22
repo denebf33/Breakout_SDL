@@ -1,7 +1,7 @@
 ## Add any additional notes here
 
-The main reference of this project is https://learnopengl.com/ \n
-In the directory ./Game/bin, use the command ./breakout to run the game.\n
+The main reference of this project is https://learnopengl.com/. 
+In the directory ./Game/bin, use the command ./breakout to run the game. Run the excutable file in other directory will cause resource loading problems.  
 This release version of the game contains no scource codes.
 
 ## Game Publicity
@@ -10,7 +10,7 @@ This release version of the game contains no scource codes.
 
 ## Compilation Instructions
 
-Simply run the build.py file. Additionally, I have contained all the frameworks for the project in the ./Game/lib directory, but just in case, I have included SDL2, SDL_mixer, SDL_image, SDL_ttf libraries in this project.
+Simply run `python3 build.py`. Additionally, I have contained all the frameworks for the project in the ./Game/lib directory, but just in case, I have included SDL2, SDL_mixer, SDL_image, SDL_ttf libraries in this project.
 
 ## Project Hieararchy
 
