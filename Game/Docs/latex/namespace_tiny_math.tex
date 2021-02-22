@@ -1,0 +1,199 @@
+\hypertarget{namespace_tiny_math}{}\doxysection{Tiny\+Math Namespace Reference}
+\label{namespace_tiny_math}\index{TinyMath@{TinyMath}}
+
+
+Namespace of \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}. This namespace contains all computation-\/realated enums/ functions/ classs/ types~\newline
+ Make sure use \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}\+:\+: before call members in this namespace.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_tiny_math_1_1_vec3}{Vec3}}
+\begin{DoxyCompactList}\small\item\em Class of three-\/dimensional vectors. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}}
+\begin{DoxyCompactList}\small\item\em Class of two-\/dimensional vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ bool, \mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Direction}}, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} $>$ \mbox{\hyperlink{namespace_tiny_math_a658847ed153867981e3fff9e39eaa643}{Collision}}
+\begin{DoxyCompactList}\small\item\em Define Collision type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}\label{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}} 
+enum \mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Direction}} \{ {\bfseries UP}
+, {\bfseries RIGHT}
+, {\bfseries DOWN}
+, {\bfseries LEFT}
+ \}
+\begin{DoxyCompactList}\small\item\em Define Direnction enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} \mbox{\hyperlink{namespace_tiny_math_aa427eb4a2f14ba9749f28692bb3c5d30}{Clamp}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} value, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} min, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} max)
+\begin{DoxyCompactList}\small\item\em Clamp a two-\/dimensional vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_tiny_math_a275c3e5d173da4bcfac1fbd63a0d7649}{Length}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} vec)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of a two-\/dimensional vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_tiny_math_a614026829fb827488b1da2410967b54b}{Dot}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} vec1, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} vec2)
+\begin{DoxyCompactList}\small\item\em Calculate the dot product of two two-\/dimensional vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} \mbox{\hyperlink{namespace_tiny_math_a0e0c0f90c5186badcea7a835b42953f3}{Normalize}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} vec)
+\begin{DoxyCompactList}\small\item\em Normalize a two-\/dimensional vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Direction}} \mbox{\hyperlink{namespace_tiny_math_a131b24e2818bb7e155eb3357097b5a80}{Vector\+Direction}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}} target)
+\begin{DoxyCompactList}\small\item\em Calculate the corresponding bounce direction of a two-\/dimensional vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace of \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}. This namespace contains all computation-\/realated enums/ functions/ classs/ types~\newline
+ Make sure use \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}\+:\+: before call members in this namespace. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_tiny_math_a658847ed153867981e3fff9e39eaa643}\label{namespace_tiny_math_a658847ed153867981e3fff9e39eaa643}} 
+\index{TinyMath@{TinyMath}!Collision@{Collision}}
+\index{Collision@{Collision}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{Collision}{Collision}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$bool, \mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Direction}}, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}}$>$ \mbox{\hyperlink{namespace_tiny_math_a658847ed153867981e3fff9e39eaa643}{Tiny\+Math\+::\+Collision}}}
+
+
+
+Define Collision type. 
+
+This type stores information of each collision detection, including whether the collision detected, the direction of the collision, and the collision point. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_tiny_math_aa427eb4a2f14ba9749f28692bb3c5d30}\label{namespace_tiny_math_aa427eb4a2f14ba9749f28692bb3c5d30}} 
+\index{TinyMath@{TinyMath}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} Tiny\+Math\+::\+Clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{value,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{min,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{max }\end{DoxyParamCaption})}
+
+
+
+Clamp a two-\/dimensional vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & Two-\/dimensional vector that need to be clamped. \\
+\hline
+\mbox{\texttt{ in}}  & {\em min} & Lower limit of the new vector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em max} & Upper limit of the new vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A two-\/dimensional vector that was clamped between min vector and max vector. 
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_tiny_math_aa427eb4a2f14ba9749f28692bb3c5d30}{Clamp}}(Vec2(1, 3), Vec2(1, 1), Vec2(4, 3));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_tiny_math_a614026829fb827488b1da2410967b54b}\label{namespace_tiny_math_a614026829fb827488b1da2410967b54b}} 
+\index{TinyMath@{TinyMath}!Dot@{Dot}}
+\index{Dot@{Dot}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily float Tiny\+Math\+::\+Dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}}}]{vec1,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}}}]{vec2 }\end{DoxyParamCaption})}
+
+
+
+Calculate the dot product of two two-\/dimensional vectors. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vec1} & The first two-\/dimensional vector of the dot product. \\
+\hline
+\mbox{\texttt{ in}}  & {\em vec2} & The second two-\/dimensional vector of the dot product. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float of result of the dot product. 
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_tiny_math_a614026829fb827488b1da2410967b54b}{Dot}}(Vec2(1, 1), Vec2(3, 3));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_tiny_math_a275c3e5d173da4bcfac1fbd63a0d7649}\label{namespace_tiny_math_a275c3e5d173da4bcfac1fbd63a0d7649}} 
+\index{TinyMath@{TinyMath}!Length@{Length}}
+\index{Length@{Length}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily float Tiny\+Math\+::\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{vec }\end{DoxyParamCaption})}
+
+
+
+Calculate the magnitude of a two-\/dimensional vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vec} & Two-\/dimensional vector that need to be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float that represents the magnitude of vec. 
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_tiny_math_a275c3e5d173da4bcfac1fbd63a0d7649}{Length}}(Vec2(1, 1);}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_tiny_math_a0e0c0f90c5186badcea7a835b42953f3}\label{namespace_tiny_math_a0e0c0f90c5186badcea7a835b42953f3}} 
+\index{TinyMath@{TinyMath}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} Tiny\+Math\+::\+Normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Vec2}}}]{vec }\end{DoxyParamCaption})}
+
+
+
+Normalize a two-\/dimensional vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vec} & The two-\/dimensional vector that need to be normalized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float of result of the dot product. 
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_tiny_math_a0e0c0f90c5186badcea7a835b42953f3}{Normalize}}(Vec2(3, 3));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_tiny_math_a131b24e2818bb7e155eb3357097b5a80}\label{namespace_tiny_math_a131b24e2818bb7e155eb3357097b5a80}} 
+\index{TinyMath@{TinyMath}!VectorDirection@{VectorDirection}}
+\index{VectorDirection@{VectorDirection}!TinyMath@{TinyMath}}
+\doxysubsubsection{\texorpdfstring{VectorDirection()}{VectorDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Tiny\+Math\+::\+Direction}} Tiny\+Math\+::\+Vector\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Calculate the corresponding bounce direction of a two-\/dimensional vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em target} & The two-\/dimensional vector to be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A enum of Direction. 
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_tiny_math_a131b24e2818bb7e155eb3357097b5a80}{VectorDirection}}(Vec2(0.6, 0.8));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}

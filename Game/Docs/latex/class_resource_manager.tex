@@ -1,0 +1,386 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+A singleton class to manage all resources in the game.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_resource_manager_ae949d7ccd87e1d662feec62174ee0fb8}{start\+Up}} (std\+::string lang)
+\begin{DoxyCompactList}\small\item\em Start up function should be called after the singleton is created. Called in the \mbox{\hyperlink{class_game_a555a9e4719fd49971765a2ab8b090b5c}{Game\+::\+Init()}} function. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_resource_manager_a7ca6364f47f0b781fab3b48668371e84}{Get\+Surface}} (std\+::string surface\+Name)
+\begin{DoxyCompactList}\small\item\em Get a surface from the sprite\+Sheet. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_resource_manager_a4ff4f31ce0fa62ed1cfe3967aa61e208}{Get\+Level}} (int level\+Code)
+\begin{DoxyCompactList}\small\item\em Get a level data from the level\+Sheet. \end{DoxyCompactList}\item 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{class_resource_manager_abddbdb52702cab00e9121f492f965513}{Get\+Font}} (std\+::string font\+Name)
+\begin{DoxyCompactList}\small\item\em Get a font from the font\+Sheet. \end{DoxyCompactList}\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{class_resource_manager_aa21449c79493cd9c5461d98734851c7c}{Get\+Sound\+Effect}} (std\+::string sound\+Effect\+Name)
+\begin{DoxyCompactList}\small\item\em Get a sound effect from the sound\+Effect\+Sheet. \end{DoxyCompactList}\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{class_resource_manager_af9164ecaa3031d153ca4456e66a671e9}{Get\+Music}} (std\+::string music\+Name)
+\begin{DoxyCompactList}\small\item\em Get a music from the sound\+Effect\+Sheet. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_resource_manager_aec61692af30447c1365a64103bac0cd6}{Get\+String}} (int string\+Code)
+\begin{DoxyCompactList}\small\item\em Get a string from the text\+Sheet. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_a64efd237018069a123679c521ac85c52}{Load\+Pic}} (const char $\ast$file, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Load a .png or .jpg file into a Surface$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_a6ddbfd764303143c8db4d337c9050831}{Load\+Level}} (const char $\ast$file, int level\+Code)
+\begin{DoxyCompactList}\small\item\em Load a .lvl file into a std\+::vector$<$std\+::vector$<$int$>$$>$$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_ac6b341cd1fa9a074c39bc2210ee7453c}{Load\+Font}} (const char $\ast$file, int font\+Size, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Load a .ttf file into a TTF\+\_\+\+Font$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_acbf4ed62adfabd4fd5f629e7affbfea0}{Load\+Sound\+Effect}} (const char $\ast$file, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Load a .wav into Mix\+\_\+\+Chunk$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_a58a93ab715295e3633ac5c3d75456670}{Load\+Music}} (const char $\ast$file, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Load a .mp3 into Mix\+\_\+\+Music$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_resource_manager_ac5694c3b10d30481715cf8d0a6a243d8}{Load\+Text}} (const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Load a .txt into some std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} singleton function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_manager_a2afd928aa94c651d2d734593d8a5b63a}\label{class_resource_manager_a2afd928aa94c651d2d734593d8a5b63a}} 
+std\+::unordered\+\_\+map$<$ std\+::string, SDL\+\_\+\+Surface $\ast$ $>$ {\bfseries sprite\+Sheet}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A singleton class to manage all resources in the game. 
+
+Contains store structure and load, call functions of pics, sound, ttfs, and strings. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_abddbdb52702cab00e9121f492f965513}\label{class_resource_manager_abddbdb52702cab00e9121f492f965513}} 
+\index{ResourceManager@{ResourceManager}!GetFont@{GetFont}}
+\index{GetFont@{GetFont}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetFont()}{GetFont()}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font $\ast$ Resource\+Manager\+::\+Get\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a font from the font\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em font\+Name} & The font you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TTF\_Font* fontTitle = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_abddbdb52702cab00e9121f492f965513}{GetFont}}(\textcolor{stringliteral}{"{}titleFont"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_afe3292346ec48c8227a99993354f2033}\label{class_resource_manager_afe3292346ec48c8227a99993354f2033}} 
+\index{ResourceManager@{ResourceManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}$\ast$ Resource\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} singleton function. 
+
+Use \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{Resource\+Manager\+::\+Get\+Instance()}} to get a singleton pointer. \mbox{\Hypertarget{class_resource_manager_a4ff4f31ce0fa62ed1cfe3967aa61e208}\label{class_resource_manager_a4ff4f31ce0fa62ed1cfe3967aa61e208}} 
+\index{ResourceManager@{ResourceManager}!GetLevel@{GetLevel}}
+\index{GetLevel@{GetLevel}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetLevel()}{GetLevel()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ int $>$ $>$ Resource\+Manager\+::\+Get\+Level (\begin{DoxyParamCaption}\item[{int}]{level\+Code }\end{DoxyParamCaption})}
+
+
+
+Get a level data from the level\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em level\+Code} & The level you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::vector<std::vector<int>> levelOneData = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_a4ff4f31ce0fa62ed1cfe3967aa61e208}{GetLevel}}(0);}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_af9164ecaa3031d153ca4456e66a671e9}\label{class_resource_manager_af9164ecaa3031d153ca4456e66a671e9}} 
+\index{ResourceManager@{ResourceManager}!GetMusic@{GetMusic}}
+\index{GetMusic@{GetMusic}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetMusic()}{GetMusic()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music $\ast$ Resource\+Manager\+::\+Get\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{music\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a music from the sound\+Effect\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em music\+Name} & The music you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Mix\_Music* bgm = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_aa21449c79493cd9c5461d98734851c7c}{GetSoundEffect}}(\textcolor{stringliteral}{"{}bgm"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_aa21449c79493cd9c5461d98734851c7c}\label{class_resource_manager_aa21449c79493cd9c5461d98734851c7c}} 
+\index{ResourceManager@{ResourceManager}!GetSoundEffect@{GetSoundEffect}}
+\index{GetSoundEffect@{GetSoundEffect}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetSoundEffect()}{GetSoundEffect()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk $\ast$ Resource\+Manager\+::\+Get\+Sound\+Effect (\begin{DoxyParamCaption}\item[{std\+::string}]{sound\+Effect\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a sound effect from the sound\+Effect\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sound\+Effect\+Name} & The sound effect you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Mix\_Chunk* bounceEffect = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_aa21449c79493cd9c5461d98734851c7c}{GetSoundEffect}}(\textcolor{stringliteral}{"{}bounceEffect"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_aec61692af30447c1365a64103bac0cd6}\label{class_resource_manager_aec61692af30447c1365a64103bac0cd6}} 
+\index{ResourceManager@{ResourceManager}!GetString@{GetString}}
+\index{GetString@{GetString}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetString()}{GetString()}}
+{\footnotesize\ttfamily std\+::string Resource\+Manager\+::\+Get\+String (\begin{DoxyParamCaption}\item[{int}]{string\+Code }\end{DoxyParamCaption})}
+
+
+
+Get a string from the text\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em string\+Code} & The number of the certain text you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string str = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_aec61692af30447c1365a64103bac0cd6}{GetString}}(0);}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_a7ca6364f47f0b781fab3b48668371e84}\label{class_resource_manager_a7ca6364f47f0b781fab3b48668371e84}} 
+\index{ResourceManager@{ResourceManager}!GetSurface@{GetSurface}}
+\index{GetSurface@{GetSurface}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetSurface()}{GetSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Resource\+Manager\+::\+Get\+Surface (\begin{DoxyParamCaption}\item[{std\+::string}]{surface\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a surface from the sprite\+Sheet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em surface\+Name} & Name of the surface you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Surface* brickSurface = \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_a7ca6364f47f0b781fab3b48668371e84}{GetSurface}}(\textcolor{stringliteral}{"{}brick"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_ac6b341cd1fa9a074c39bc2210ee7453c}\label{class_resource_manager_ac6b341cd1fa9a074c39bc2210ee7453c}} 
+\index{ResourceManager@{ResourceManager}!LoadFont@{LoadFont}}
+\index{LoadFont@{LoadFont}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadFont()}{LoadFont()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{int}]{font\+Size,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Load a .ttf file into a TTF\+\_\+\+Font$\ast$. 
+
+The path should be relative to the ./bin/breakout file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the font. \\
+\hline
+\mbox{\texttt{ in}}  & {\em font\+Size} & The size of the font. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & Name of the font. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_ac6b341cd1fa9a074c39bc2210ee7453c}{LoadFont}}(\textcolor{stringliteral}{"{}./Assets/Fonts/Song.ttf"{}}, 20, \textcolor{stringliteral}{"{}scoreFont"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_a6ddbfd764303143c8db4d337c9050831}\label{class_resource_manager_a6ddbfd764303143c8db4d337c9050831}} 
+\index{ResourceManager@{ResourceManager}!LoadLevel@{LoadLevel}}
+\index{LoadLevel@{LoadLevel}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadLevel()}{LoadLevel()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Level (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{int}]{level\+Code }\end{DoxyParamCaption})}
+
+
+
+Load a .lvl file into a std\+::vector$<$std\+::vector$<$int$>$$>$$\ast$. 
+
+The path should be related to the ./bin/breakout file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the level file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em level\+Code} & Index of the level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_a6ddbfd764303143c8db4d337c9050831}{LoadLevel}}(\textcolor{stringliteral}{"{}./Assets/Levels/one.lvl"{}}, 1);}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_a58a93ab715295e3633ac5c3d75456670}\label{class_resource_manager_a58a93ab715295e3633ac5c3d75456670}} 
+\index{ResourceManager@{ResourceManager}!LoadMusic@{LoadMusic}}
+\index{LoadMusic@{LoadMusic}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadMusic()}{LoadMusic()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Music (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Load a .mp3 into Mix\+\_\+\+Music$\ast$. 
+
+The path should be relative to the ./bin/breakout file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the music. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & Name of the music. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_a58a93ab715295e3633ac5c3d75456670}{LoadMusic}}(\textcolor{stringliteral}{"{}./Assets/Sounds/backgroundMusic.mp3"{}}, \textcolor{stringliteral}{"{}bgm"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_a64efd237018069a123679c521ac85c52}\label{class_resource_manager_a64efd237018069a123679c521ac85c52}} 
+\index{ResourceManager@{ResourceManager}!LoadPic@{LoadPic}}
+\index{LoadPic@{LoadPic}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadPic()}{LoadPic()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Pic (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Load a .png or .jpg file into a Surface$\ast$. 
+
+The path should be relative to the ./bin/breakout folder. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the pic. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & Name of the pic. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_a64efd237018069a123679c521ac85c52}{LoadPic}}(\textcolor{stringliteral}{"{}./Assets/Img/block.png"{}}, \textcolor{stringliteral}{"{}brick"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_acbf4ed62adfabd4fd5f629e7affbfea0}\label{class_resource_manager_acbf4ed62adfabd4fd5f629e7affbfea0}} 
+\index{ResourceManager@{ResourceManager}!LoadSoundEffect@{LoadSoundEffect}}
+\index{LoadSoundEffect@{LoadSoundEffect}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadSoundEffect()}{LoadSoundEffect()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Sound\+Effect (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Load a .wav into Mix\+\_\+\+Chunk$\ast$. 
+
+The path should be relative to the ./bin/breakout file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the sound effect. \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & Name of the sound effect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_acbf4ed62adfabd4fd5f629e7affbfea0}{LoadSoundEffect}}(\textcolor{stringliteral}{"{}./Assets/Sounds/bleepSolid.wav"{}}, \textcolor{stringliteral}{"{}bleepSolid"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_ac5694c3b10d30481715cf8d0a6a243d8}\label{class_resource_manager_ac5694c3b10d30481715cf8d0a6a243d8}} 
+\index{ResourceManager@{ResourceManager}!LoadText@{LoadText}}
+\index{LoadText@{LoadText}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadText()}{LoadText()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::\+Load\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Load a .txt into some std\+::string. 
+
+The path should be relative to the ./bin/breakout folder. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File path of the .txt file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_ac5694c3b10d30481715cf8d0a6a243d8}{LoadText}}(\textcolor{stringliteral}{"{}./Assets/Strings/String\_ch.txt"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_resource_manager_ae949d7ccd87e1d662feec62174ee0fb8}\label{class_resource_manager_ae949d7ccd87e1d662feec62174ee0fb8}} 
+\index{ResourceManager@{ResourceManager}!startUp@{startUp}}
+\index{startUp@{startUp}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{startUp()}{startUp()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::start\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{lang }\end{DoxyParamCaption})}
+
+
+
+Start up function should be called after the singleton is created. Called in the \mbox{\hyperlink{class_game_a555a9e4719fd49971765a2ab8b090b5c}{Game\+::\+Init()}} function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lang} & The language to load, you can choose between \char`\"{}\+English\char`\"{} and \char`\"{}\+Chinese\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>\mbox{\hyperlink{class_resource_manager_ae949d7ccd87e1d662feec62174ee0fb8}{startUp}}(\textcolor{stringliteral}{"{}Chinese"{}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_resource_manager_8hpp}{Resource\+Manager.\+hpp}}\item 
+\mbox{\hyperlink{_resource_manager_8cpp}{Resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

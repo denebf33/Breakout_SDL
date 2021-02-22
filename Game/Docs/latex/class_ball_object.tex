@@ -1,0 +1,136 @@
+\hypertarget{class_ball_object}{}\doxysection{Ball\+Object Class Reference}
+\label{class_ball_object}\index{BallObject@{BallObject}}
+
+
+Derived form the class \mbox{\hyperlink{class_game_object}{Game\+Object}}. Represents the ball in the game.  
+
+
+
+
+{\ttfamily \#include $<$Ball\+Object.\+hpp$>$}
+
+Inheritance diagram for Ball\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ball_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_object_ac2106a42734e5028b3be1a38e8c39e31}\label{class_ball_object_ac2106a42734e5028b3be1a38e8c39e31}} 
+\mbox{\hyperlink{class_ball_object_ac2106a42734e5028b3be1a38e8c39e31}{Ball\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ball_object_ac6d402781268fb9171b8a241e09a99f9}{Ball\+Object}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} pos, float \mbox{\hyperlink{class_ball_object_afa5dcf4abb52e0ff230eb6d30aeac128}{radius}}, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}{velocity}}, SDL\+\_\+\+Surface $\ast$\mbox{\hyperlink{class_game_object_aa0e30125fe979a830ee6a069fd498673}{sprite}}, SDL\+\_\+\+Renderer $\ast$\mbox{\hyperlink{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}{renderer}})
+\begin{DoxyCompactList}\small\item\em Contructor of \mbox{\hyperlink{class_ball_object}{Ball\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{class_ball_object_a9d48538e8ea2f8abcdf81695161190e2}{Move}} (float dt, int window\+\_\+width)
+\begin{DoxyCompactList}\small\item\em Move the ball. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_object_a5a9db03f9493003615a510b24d279603}{Reset}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} position, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}{velocity}})
+\begin{DoxyCompactList}\small\item\em Reset the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_object_afa5dcf4abb52e0ff230eb6d30aeac128}\label{class_ball_object_afa5dcf4abb52e0ff230eb6d30aeac128}} 
+float \mbox{\hyperlink{class_ball_object_afa5dcf4abb52e0ff230eb6d30aeac128}{radius}}
+\begin{DoxyCompactList}\small\item\em Radius of the ball. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ball_object_a8ac10a8e4c9219e0eabb31ad4488e773}\label{class_ball_object_a8ac10a8e4c9219e0eabb31ad4488e773}} 
+bool \mbox{\hyperlink{class_ball_object_a8ac10a8e4c9219e0eabb31ad4488e773}{stuck}}
+\begin{DoxyCompactList}\small\item\em Whether the ball is stucked in the paddle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Derived form the class \mbox{\hyperlink{class_game_object}{Game\+Object}}. Represents the ball in the game. 
+
+Class to store data of the ball, and the \mbox{\hyperlink{class_ball_object_a9d48538e8ea2f8abcdf81695161190e2}{Move()}} and \mbox{\hyperlink{class_ball_object_a5a9db03f9493003615a510b24d279603}{Reset()}} function of it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_object_ac6d402781268fb9171b8a241e09a99f9}\label{class_ball_object_ac6d402781268fb9171b8a241e09a99f9}} 
+\index{BallObject@{BallObject}!BallObject@{BallObject}}
+\index{BallObject@{BallObject}!BallObject@{BallObject}}
+\doxysubsubsection{\texorpdfstring{BallObject()}{BallObject()}}
+{\footnotesize\ttfamily Ball\+Object\+::\+Ball\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{pos,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{velocity,  }\item[{SDL\+\_\+\+Surface $\ast$}]{sprite,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Contructor of \mbox{\hyperlink{class_ball_object}{Ball\+Object}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & Position of the ball. \\
+\hline
+\mbox{\texttt{ in}}  & {\em radius} & Radius of the ball. \\
+\hline
+\mbox{\texttt{ in}}  & {\em velocity} & Initial velocity of the ball. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sprite} & The sprite of the ball. Stored in \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em renderer} & Current renderer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_ball_object}{BallObject}}* ball = \textcolor{keyword}{new} \mbox{\hyperlink{class_ball_object_ac2106a42734e5028b3be1a38e8c39e31}{BallObject}}(ballPos, \mbox{\hyperlink{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}{BALL\_RADIUS}}, \mbox{\hyperlink{_game_8hpp_a75945de6045e82fca6af6061d1d7f13d}{INITIAL\_BALL\_VELOCITY}}, \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>GetSurface(\textcolor{stringliteral}{"{}face"{}}), \mbox{\hyperlink{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}{renderer}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_object_a9d48538e8ea2f8abcdf81695161190e2}\label{class_ball_object_a9d48538e8ea2f8abcdf81695161190e2}} 
+\index{BallObject@{BallObject}!Move@{Move}}
+\index{Move@{Move}!BallObject@{BallObject}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} Ball\+Object\+::\+Move (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{int}]{window\+\_\+width }\end{DoxyParamCaption})}
+
+
+
+Move the ball. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & Delta time of the main loop. \\
+\hline
+\mbox{\texttt{ in}}  & {\em window\+\_\+width} & Width of the window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ball-\/>Move(localDt, this-\/>width);}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{class_ball_object_a5a9db03f9493003615a510b24d279603}\label{class_ball_object_a5a9db03f9493003615a510b24d279603}} 
+\index{BallObject@{BallObject}!Reset@{Reset}}
+\index{Reset@{Reset}!BallObject@{BallObject}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Ball\+Object\+::\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{position,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Reset the ball. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & Reset position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em velocity} & Reset initial velocity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ball-\/>Reset(\mbox{\hyperlink{class_tiny_math_1_1_vec2}{TinyMath::Vec2}}(player-\/>dest.x, player-\/>dest.y) + \mbox{\hyperlink{class_tiny_math_1_1_vec2}{TinyMath::Vec2}}(\mbox{\hyperlink{_game_8hpp_af1ca75dd8f7d4c3f9f1a3b3e8e1522be}{PLAYER\_SIZE}}.x / 2 -\/ \mbox{\hyperlink{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}{BALL\_RADIUS}}, -\/(\mbox{\hyperlink{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}{BALL\_RADIUS}} * 2)), \mbox{\hyperlink{_game_8hpp_a75945de6045e82fca6af6061d1d7f13d}{INITIAL\_BALL\_VELOCITY}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ball_object_8hpp}{Ball\+Object.\+hpp}}\item 
+\mbox{\hyperlink{_ball_object_8cpp}{Ball\+Object.\+cpp}}\end{DoxyCompactItemize}

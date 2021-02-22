@@ -1,0 +1,6 @@
+Lives:
+Score:
+Press SPACE to start, Q to quit
+Press WS or L/R Arrows to select level
+You lose...
+You win!!!

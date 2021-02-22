@@ -1,0 +1,105 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+Class of all interactable objects in the game.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+hpp$>$}
+
+Inheritance diagram for Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}\label{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}\label{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}} 
+\mbox{\hyperlink{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}{$\sim$\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor, free all allocated memory or other resource of this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_a78d250c86a2f264bd01ae2412aaf3174}{Game\+Object}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} pos, \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} size, SDL\+\_\+\+Surface $\ast$\mbox{\hyperlink{class_game_object_ad93c0f77ca02c0721710d1960d6201c6}{surface}}, SDL\+\_\+\+Renderer $\ast$\mbox{\hyperlink{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}{renderer}}, \mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}} \mbox{\hyperlink{class_game_object_a1d3ba0ee5ea2c12727356cb50f3d659b}{color}}=\mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}}(255, 255, 255), \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}{velocity}}=\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}(0.\+0f, 0.\+0f))
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ad3ac1deac50048cf7a1a19eb0e61ad26}\label{class_game_object_ad3ac1deac50048cf7a1a19eb0e61ad26}} 
+virtual void \mbox{\hyperlink{class_game_object_ad3ac1deac50048cf7a1a19eb0e61ad26}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Funtion to draw this object. Call in main loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}\label{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}} 
+\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{class_game_object_a4ddeb3874f41c4fde6bb29ed028a0d16}{velocity}}
+\begin{DoxyCompactList}\small\item\em Velocity of this object. \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2(0, 0)}} for bricks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a1d3ba0ee5ea2c12727356cb50f3d659b}\label{class_game_object_a1d3ba0ee5ea2c12727356cb50f3d659b}} 
+\mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}} \mbox{\hyperlink{class_game_object_a1d3ba0ee5ea2c12727356cb50f3d659b}{color}}
+\begin{DoxyCompactList}\small\item\em Color of this object. Used to render bricks with different colors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a975046eeccf3433f0730d365ea967d0e}\label{class_game_object_a975046eeccf3433f0730d365ea967d0e}} 
+bool \mbox{\hyperlink{class_game_object_a975046eeccf3433f0730d365ea967d0e}{is\+Solid}}
+\begin{DoxyCompactList}\small\item\em If this object is a brick, whether it is solid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a0d05bf1efa95b51c2c0c9f16161b17a1}\label{class_game_object_a0d05bf1efa95b51c2c0c9f16161b17a1}} 
+bool \mbox{\hyperlink{class_game_object_a0d05bf1efa95b51c2c0c9f16161b17a1}{destroyed}}
+\begin{DoxyCompactList}\small\item\em If this object is a brick, whether it is destryed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ad93c0f77ca02c0721710d1960d6201c6}\label{class_game_object_ad93c0f77ca02c0721710d1960d6201c6}} 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_game_object_ad93c0f77ca02c0721710d1960d6201c6}{surface}}
+\begin{DoxyCompactList}\small\item\em Surface of this object, used to create corresponding texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aa0e30125fe979a830ee6a069fd498673}\label{class_game_object_aa0e30125fe979a830ee6a069fd498673}} 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_game_object_aa0e30125fe979a830ee6a069fd498673}{sprite}}
+\begin{DoxyCompactList}\small\item\em Create by this-\/$>$surface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}\label{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}} 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}{renderer}}
+\begin{DoxyCompactList}\small\item\em Current renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_af9954f1492cd55e65b00bf98cbc77517}\label{class_game_object_af9954f1492cd55e65b00bf98cbc77517}} 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_game_object_af9954f1492cd55e65b00bf98cbc77517}{dest}}
+\begin{DoxyCompactList}\small\item\em Store position and size of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of all interactable objects in the game. 
+
+Used to represent player, ball, bricks in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a78d250c86a2f264bd01ae2412aaf3174}\label{class_game_object_a78d250c86a2f264bd01ae2412aaf3174}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{pos,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{size,  }\item[{SDL\+\_\+\+Surface $\ast$}]{surface,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}}}]{color = {\ttfamily \mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}}(255,~255,~255)},  }\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{velocity = {\ttfamily \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}(0.0f,~0.0f)} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & Position of the object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Size of the object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em surface} & Surface to create texture. \\
+\hline
+\mbox{\texttt{ in}}  & {\em renderer} & Current renderer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em color} & Color of the object. Only works on bricks. \\
+\hline
+\mbox{\texttt{ in}}  & {\em velocity} & Initial velocity of the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_game_object}{GameObject}}* obj = \textcolor{keyword}{new} \mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{GameObject}}(pos, size, \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>GetSurface(\textcolor{stringliteral}{"{}brick\_solid"{}}), \mbox{\hyperlink{class_game_object_a6aacd30e1d6c558c8781f8f4ac21951b}{renderer}}, \mbox{\hyperlink{class_tiny_math_1_1_vec3}{TinyMath::Vec3}}(204, 204, 179));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_object_8hpp}{Game\+Object.\+hpp}}\item 
+\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}

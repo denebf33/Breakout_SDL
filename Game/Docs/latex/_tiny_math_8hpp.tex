@@ -1,0 +1,70 @@
+\hypertarget{_tiny_math_8hpp}{}\doxysection{Tiny\+Math.\+hpp File Reference}
+\label{_tiny_math_8hpp}\index{TinyMath.hpp@{TinyMath.hpp}}
+
+
+Header of \mbox{\hyperlink{_tiny_math_8cpp}{Tiny\+Math.\+cpp}}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_tiny_math_1_1_vec3}{Tiny\+Math\+::\+Vec3}}
+\begin{DoxyCompactList}\small\item\em Class of three-\/dimensional vectors. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}
+\begin{DoxyCompactList}\small\item\em Class of two-\/dimensional vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}
+\begin{DoxyCompactList}\small\item\em Namespace of \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}. This namespace contains all computation-\/realated enums/ functions/ classs/ types~\newline
+ Make sure use \mbox{\hyperlink{namespace_tiny_math}{Tiny\+Math}}\+:\+: before call members in this namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ bool, Direction, Vec2 $>$ \mbox{\hyperlink{namespace_tiny_math_a658847ed153867981e3fff9e39eaa643}{Tiny\+Math\+::\+Collision}}
+\begin{DoxyCompactList}\small\item\em Define Collision type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}\label{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}} 
+enum \mbox{\hyperlink{namespace_tiny_math_a48e23d26a9eca1bf13236a7df8ce5385}{Tiny\+Math\+::\+Direction}} \{ {\bfseries UP}
+, {\bfseries RIGHT}
+, {\bfseries DOWN}
+, {\bfseries LEFT}
+ \}
+\begin{DoxyCompactList}\small\item\em Define Direnction enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vec2 \mbox{\hyperlink{namespace_tiny_math_aa427eb4a2f14ba9749f28692bb3c5d30}{Tiny\+Math\+::\+Clamp}} (Vec2 value, Vec2 min, Vec2 max)
+\begin{DoxyCompactList}\small\item\em Clamp a two-\/dimensional vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_tiny_math_a275c3e5d173da4bcfac1fbd63a0d7649}{Tiny\+Math\+::\+Length}} (Vec2 vec)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of a two-\/dimensional vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_tiny_math_a614026829fb827488b1da2410967b54b}{Tiny\+Math\+::\+Dot}} (Vec2 vec1, Vec2 vec2)
+\begin{DoxyCompactList}\small\item\em Calculate the dot product of two two-\/dimensional vectors. \end{DoxyCompactList}\item 
+Vec2 \mbox{\hyperlink{namespace_tiny_math_a0e0c0f90c5186badcea7a835b42953f3}{Tiny\+Math\+::\+Normalize}} (Vec2 vec)
+\begin{DoxyCompactList}\small\item\em Normalize a two-\/dimensional vector. \end{DoxyCompactList}\item 
+Direction \mbox{\hyperlink{namespace_tiny_math_a131b24e2818bb7e155eb3357097b5a80}{Tiny\+Math\+::\+Vector\+Direction}} (Vec2 target)
+\begin{DoxyCompactList}\small\item\em Calculate the corresponding bounce direction of a two-\/dimensional vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of \mbox{\hyperlink{_tiny_math_8cpp}{Tiny\+Math.\+cpp}}. 
+
+Declared a namespace of vector calculations. \begin{DoxyAuthor}{Author}
+Junfeng\+Zhou 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021-\/2-\/22 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+V1.\+0
+\end{DoxyVersion}
+\begin{DoxyAttention}{Attention}
+Platform\+: Mac\+OS ~\newline
+
+\end{DoxyAttention}

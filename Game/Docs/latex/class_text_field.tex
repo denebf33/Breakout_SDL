@@ -1,0 +1,132 @@
+\hypertarget{class_text_field}{}\doxysection{Text\+Field Class Reference}
+\label{class_text_field}\index{TextField@{TextField}}
+
+
+Class of text fields.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Field.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_field_ae5ddf6e38ead3199cf040f183c51e362}{Text\+Field}} (\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} position, SDL\+\_\+\+Renderer $\ast$\mbox{\hyperlink{class_text_field_a2e3c27d99b1aff8c414d8ff77adb2e6f}{renderer}}, TTF\+\_\+\+Font $\ast$\mbox{\hyperlink{class_text_field_a4c0e998ae760e64f98eb25ebf10fae58}{font}}, std\+::string \mbox{\hyperlink{class_text_field_affa9fc8605922880be67ff0e3803b4bf}{lang}}, int width, int \mbox{\hyperlink{class_text_field_a1c2e3f53f4f892f89231da6759f8416c}{height}}, bool \mbox{\hyperlink{class_text_field_a6ba6b0b14dfa3fea37d62765b41b5a01}{center}}=false)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_text_field}{Text\+Field}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_a53f7984c4c2f5b734568fc29da2fa8bf}\label{class_text_field_a53f7984c4c2f5b734568fc29da2fa8bf}} 
+\mbox{\hyperlink{class_text_field_a53f7984c4c2f5b734568fc29da2fa8bf}{Text\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_a853eef86772f3be5ee5f123a78ebdd07}\label{class_text_field_a853eef86772f3be5ee5f123a78ebdd07}} 
+\mbox{\hyperlink{class_text_field_a853eef86772f3be5ee5f123a78ebdd07}{$\sim$\+Text\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Destructor, free all allocated memory and other resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_acb28362cb9c0ab348f6bc792e2de4c79}\label{class_text_field_acb28362cb9c0ab348f6bc792e2de4c79}} 
+void \mbox{\hyperlink{class_text_field_acb28362cb9c0ab348f6bc792e2de4c79}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw this text field into the renderer. Call in the main loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_field_a847eda623d567edceceac42c058c02f0}{Set\+Text}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Set the text of this text field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_text_field_a2e3c27d99b1aff8c414d8ff77adb2e6f}\label{class_text_field_a2e3c27d99b1aff8c414d8ff77adb2e6f}} 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_text_field_a2e3c27d99b1aff8c414d8ff77adb2e6f}{renderer}}
+\begin{DoxyCompactList}\small\item\em Current renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_a4c0e998ae760e64f98eb25ebf10fae58}\label{class_text_field_a4c0e998ae760e64f98eb25ebf10fae58}} 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{class_text_field_a4c0e998ae760e64f98eb25ebf10fae58}{font}}
+\begin{DoxyCompactList}\small\item\em Font for this text field. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_afd26f82fed43420ec812c81c2ee741f4}\label{class_text_field_afd26f82fed43420ec812c81c2ee741f4}} 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_text_field_afd26f82fed43420ec812c81c2ee741f4}{surface}}
+\begin{DoxyCompactList}\small\item\em Surface of this text field. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_af42573c02f68be9fcb4a7a26de01efc8}\label{class_text_field_af42573c02f68be9fcb4a7a26de01efc8}} 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_text_field_af42573c02f68be9fcb4a7a26de01efc8}{texture}}
+\begin{DoxyCompactList}\small\item\em Texture of texts. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_a0edba3b81532f7cc61b1da7a0070248d}\label{class_text_field_a0edba3b81532f7cc61b1da7a0070248d}} 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_text_field_a0edba3b81532f7cc61b1da7a0070248d}{rect}} \{\}
+\begin{DoxyCompactList}\small\item\em Rect to store position and size of the text field. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_ae4f7884c8a76697223c3e7296e025a06}\label{class_text_field_ae4f7884c8a76697223c3e7296e025a06}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{class_text_field_a1c2e3f53f4f892f89231da6759f8416c}\label{class_text_field_a1c2e3f53f4f892f89231da6759f8416c}} 
+int \mbox{\hyperlink{class_text_field_a1c2e3f53f4f892f89231da6759f8416c}{height}}
+\begin{DoxyCompactList}\small\item\em Height and width of the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_affa9fc8605922880be67ff0e3803b4bf}\label{class_text_field_affa9fc8605922880be67ff0e3803b4bf}} 
+std\+::string \mbox{\hyperlink{class_text_field_affa9fc8605922880be67ff0e3803b4bf}{lang}}
+\begin{DoxyCompactList}\small\item\em Language of this text field, choose between \char`\"{}\+Chinese\char`\"{} and \char`\"{}\+English\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_field_a6ba6b0b14dfa3fea37d62765b41b5a01}\label{class_text_field_a6ba6b0b14dfa3fea37d62765b41b5a01}} 
+bool \mbox{\hyperlink{class_text_field_a6ba6b0b14dfa3fea37d62765b41b5a01}{center}}
+\begin{DoxyCompactList}\small\item\em Whether this text field rendered on the center of the x-\/axis of the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of text fields. 
+
+Contains the attributes and functions of all text fields. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_field_ae5ddf6e38ead3199cf040f183c51e362}\label{class_text_field_ae5ddf6e38ead3199cf040f183c51e362}} 
+\index{TextField@{TextField}!TextField@{TextField}}
+\index{TextField@{TextField}!TextField@{TextField}}
+\doxysubsubsection{\texorpdfstring{TextField()}{TextField()}}
+{\footnotesize\ttfamily Text\+Field\+::\+Text\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}}}]{position,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{std\+::string}]{lang,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{center = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_text_field}{Text\+Field}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & Position of this text field. \\
+\hline
+\mbox{\texttt{ in}}  & {\em renderer} & Current renderer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em font} & Font of this text field, stored in \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em lang} & Language of this text field. \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em center} & Whether this text field rendered on the center of the x-\/axis of the screen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_text_field}{TextField}}* scoreField = \textcolor{keyword}{new} \mbox{\hyperlink{class_text_field_a53f7984c4c2f5b734568fc29da2fa8bf}{TextField}}(\mbox{\hyperlink{class_tiny_math_1_1_vec2}{TinyMath::Vec2}}(width -\/ 100, 0), this-\/>\mbox{\hyperlink{class_text_field_a2e3c27d99b1aff8c414d8ff77adb2e6f}{renderer}}, \mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>GetFont(\textcolor{stringliteral}{"{}scoreFont"{}}), \mbox{\hyperlink{class_text_field_affa9fc8605922880be67ff0e3803b4bf}{lang}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_field_a847eda623d567edceceac42c058c02f0}\label{class_text_field_a847eda623d567edceceac42c058c02f0}} 
+\index{TextField@{TextField}!SetText@{SetText}}
+\index{SetText@{SetText}!TextField@{TextField}}
+\doxysubsubsection{\texorpdfstring{SetText()}{SetText()}}
+{\footnotesize\ttfamily void Text\+Field\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Set the text of this text field. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & The text you want to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{textFields[\textcolor{stringliteral}{"{}lifeField"{}}]-\/>SetText(\mbox{\hyperlink{class_resource_manager_afe3292346ec48c8227a99993354f2033}{ResourceManager::GetInstance}}()-\/>GetString(0) + std::to\_string(this-\/>lives));}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_text_field_8hpp}{Text\+Field.\+hpp}}\item 
+\mbox{\hyperlink{_text_field_8cpp}{Text\+Field.\+cpp}}\end{DoxyCompactItemize}

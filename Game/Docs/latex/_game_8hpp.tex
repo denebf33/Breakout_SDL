@@ -1,0 +1,72 @@
+\hypertarget{_game_8hpp}{}\doxysection{Game.\+hpp File Reference}
+\label{_game_8hpp}\index{Game.hpp@{Game.hpp}}
+
+
+Header of \mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$SDL2/\+SDL.\+h$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Game\+Level.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ball\+Object.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tiny\+Math.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Text\+Field.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game}{Game}}
+\begin{DoxyCompactList}\small\item\em Class of the game logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_game_8hpp_a7899b65f1ea0f655e4bbf8d2a5714285}\label{_game_8hpp_a7899b65f1ea0f655e4bbf8d2a5714285}} 
+enum {\bfseries Game\+State} \{ {\bfseries GAME\+\_\+\+ACTIVE}
+, {\bfseries GAME\+\_\+\+MENU}
+, {\bfseries GAME\+\_\+\+END}
+ \}
+\item 
+\mbox{\Hypertarget{_game_8hpp_a2200c9a3564da59c1160338587ecb034}\label{_game_8hpp_a2200c9a3564da59c1160338587ecb034}} 
+enum {\bfseries Buttons} \{ {\bfseries Paddle\+Left} = 0
+, {\bfseries Paddle\+Right}
+, {\bfseries Confirm}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_game_8hpp_ad36e492bb03e19111c689580db2be876}\label{_game_8hpp_ad36e492bb03e19111c689580db2be876}} 
+const float \mbox{\hyperlink{_game_8hpp_ad36e492bb03e19111c689580db2be876}{PLAYER\+\_\+\+VELOCITY}} (500.\+0f)
+\begin{DoxyCompactList}\small\item\em Velocity of the player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}\label{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}} 
+const float \mbox{\hyperlink{_game_8hpp_a9beb30db31ead6ed731990297859f0b7}{BALL\+\_\+\+RADIUS}} (12.\+5f)
+\begin{DoxyCompactList}\small\item\em Radius of the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_game_8hpp_af1ca75dd8f7d4c3f9f1a3b3e8e1522be}\label{_game_8hpp_af1ca75dd8f7d4c3f9f1a3b3e8e1522be}} 
+const \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{_game_8hpp_af1ca75dd8f7d4c3f9f1a3b3e8e1522be}{PLAYER\+\_\+\+SIZE}} (100, 20)
+\begin{DoxyCompactList}\small\item\em Size of the player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_game_8hpp_a75945de6045e82fca6af6061d1d7f13d}\label{_game_8hpp_a75945de6045e82fca6af6061d1d7f13d}} 
+const \mbox{\hyperlink{class_tiny_math_1_1_vec2}{Tiny\+Math\+::\+Vec2}} \mbox{\hyperlink{_game_8hpp_a75945de6045e82fca6af6061d1d7f13d}{INITIAL\+\_\+\+BALL\+\_\+\+VELOCITY}} (100.\+0f, -\/350.\+0f)
+\begin{DoxyCompactList}\small\item\em Initial veclocity of the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header of \mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}. 
+
+Declared the game class and some related enums or const variables. \begin{DoxyAuthor}{Author}
+Junfeng\+Zhou 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021-\/2-\/22 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+V1.\+0
+\end{DoxyVersion}
+\begin{DoxyAttention}{Attention}
+Platform\+: Mac\+OS ~\newline
+
+\end{DoxyAttention}

@@ -1,0 +1,80 @@
+\hypertarget{class_game_level}{}\doxysection{Game\+Level Class Reference}
+\label{class_game_level}\index{GameLevel@{GameLevel}}
+
+
+Class of all levels in the game.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Level.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_level_a5723a38b2b32300d4f071419afacd6f9}\label{class_game_level_a5723a38b2b32300d4f071419afacd6f9}} 
+\mbox{\hyperlink{class_game_level_a5723a38b2b32300d4f071419afacd6f9}{Game\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Empty contructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_level_a9380ff198c049055a0d42de2604ee76e}{Load}} (int level\+Code, int level\+Width, int level\+Height, SDL\+\_\+\+Renderer $\ast$\mbox{\hyperlink{class_game_level_afa39992fe633b709e314991806a04371}{renderer}})
+\begin{DoxyCompactList}\small\item\em Load level from level data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_level_a61f0e138d53cdd44d985f3fbcb74044b}\label{class_game_level_a61f0e138d53cdd44d985f3fbcb74044b}} 
+void \mbox{\hyperlink{class_game_level_a61f0e138d53cdd44d985f3fbcb74044b}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw this level. Call in the main loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_level_afe7683ad46e3b404a2b14e2cb03f86f0}\label{class_game_level_afe7683ad46e3b404a2b14e2cb03f86f0}} 
+bool \mbox{\hyperlink{class_game_level_afe7683ad46e3b404a2b14e2cb03f86f0}{Is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Check if this level is completed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_level_a37af8f50cc369d630f0d51a4128c6ac4}\label{class_game_level_a37af8f50cc369d630f0d51a4128c6ac4}} 
+\mbox{\hyperlink{class_game_level_a37af8f50cc369d630f0d51a4128c6ac4}{$\sim$\+Game\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Destructor, free all allocated memory or other resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_level_afa39992fe633b709e314991806a04371}\label{class_game_level_afa39992fe633b709e314991806a04371}} 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_game_level_afa39992fe633b709e314991806a04371}{renderer}}
+\begin{DoxyCompactList}\small\item\em Current renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_level_a1dd6a250dd2190c3c155543607865ea1}\label{class_game_level_a1dd6a250dd2190c3c155543607865ea1}} 
+std\+::vector$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_game_level_a1dd6a250dd2190c3c155543607865ea1}{Bricks}}
+\begin{DoxyCompactList}\small\item\em std\+::vector to store all bricks in this level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of all levels in the game. 
+
+Class to store, initialize and render levels. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_level_a9380ff198c049055a0d42de2604ee76e}\label{class_game_level_a9380ff198c049055a0d42de2604ee76e}} 
+\index{GameLevel@{GameLevel}!Load@{Load}}
+\index{Load@{Load}!GameLevel@{GameLevel}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Game\+Level\+::\+Load (\begin{DoxyParamCaption}\item[{int}]{level\+Code,  }\item[{int}]{level\+Width,  }\item[{int}]{level\+Height,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Load level from level data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em level\+Code} & Index of the level. \\
+\hline
+\mbox{\texttt{ in}}  & {\em level\+Width} & Equal to the width of the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em level\+Height} & Half of the height of the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em renderer} & Current renderer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Example\+:}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{one-\/>Load(1, this-\/>width, this-\/>height / 2, this-\/>\mbox{\hyperlink{class_game_level_afa39992fe633b709e314991806a04371}{renderer}});}
+
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_level_8hpp}{Game\+Level.\+hpp}}\item 
+\mbox{\hyperlink{_game_level_8cpp}{Game\+Level.\+cpp}}\end{DoxyCompactItemize}
