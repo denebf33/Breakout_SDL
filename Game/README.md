@@ -1,6 +1,6 @@
 ## Add any additional notes here
 
-The main reference of this project is https://learnopengl.com/. 
+The main reference of this project is https://learnopengl.com/.  
 In the directory ./Game/bin, use the command ./breakout to run the game. Run the excutable file in other directory will cause resource loading problems.  
 This release version of the game contains no scource codes.
 
