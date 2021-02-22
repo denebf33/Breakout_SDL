@@ -1,7 +1,7 @@
 ## Add any additional notes here
 
-The main reference of this project is https://learnopengl.com/
-In the directory ./Game/bin, use the command ./breakout to run the game.
+The main reference of this project is https://learnopengl.com/ \n
+In the directory ./Game/bin, use the command ./breakout to run the game.\n
 This release version of the game contains no scource codes.
 
 ## Game Publicity
