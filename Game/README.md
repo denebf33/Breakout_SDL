@@ -1,14 +1,16 @@
 ## Add any additional notes here
 
-*your additional notes, or things TA's and instructors should know*
+The main reference of this project is https://learnopengl.com/
+In the directory ./Game/bin, use the command ./breakout to run the game.
+This release version of the game contains no scource codes.
 
 ## Game Publicity
 
-**Project Website**: *please edit the project website with a link here* (See part 3)
+**Project Website**: https://denebf33.blogspot.com/2021/02/sdl-breakout-project.html
 
 ## Compilation Instructions
 
-*Please edit if there are any special build instructions beyond running `python3 build.py`*
+Simply run the build.py file. Additionally, I have contained all the frameworks for the project in the ./Game/lib directory, but just in case, I have included SDL2, SDL_mixer, SDL_image, SDL_ttf libraries in this project.
 
 ## Project Hieararchy
 
